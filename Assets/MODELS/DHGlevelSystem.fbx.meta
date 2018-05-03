@@ -104,7 +104,17 @@ ModelImporter:
     4300032: LevelMidBflat
     4300034: LevelFarBflat
     4300036: LevelMidFarAflat
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatGrass01
+    second: {fileID: 2100000, guid: df76018a243a3794593ab27ae8be002d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatGround01
+    second: {fileID: 2100000, guid: d46f49fc11e607148a79ecf11ac624e7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -155,8 +165,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 58
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
