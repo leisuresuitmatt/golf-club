@@ -1,19 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameControler : MonoBehaviour
 {
 
     public HitablePlayer player1;
     public HitablePlayer player2;
+    public HitablePlayer player3;
+    public HitablePlayer player4;
+
     public Text timer;
-    public Image[] player1VP;
-    public Image[] player2VP;
-    public Text player1WIN;
-    public Text player2WIN;
+    public Text Team1VP;
+    public Text Team2VP;
+    public Text Team3VP;
+    public Text Team4VP;
+    public Text Team1WIN;
+    public Text Team2WIN;
+    public Text Team3WIN;
+    public Text Team4WIN;
+    public Text Tie;
     public Text playAgainText;
     public GameObject endCamSetup;
     public Transform endCamSpawner;
@@ -22,13 +28,18 @@ public class GameControler : MonoBehaviour
     public int victoryPoints;
     int p1VP;
     int p2VP;
+    int p3VP;
+    int p4VP;
     bool roundOver;
 
     private void Start()
     {
         time *= 60;
-        player1WIN.enabled = false;
-        player2WIN.enabled = false;
+        Team1WIN.enabled = false;
+        Team2WIN.enabled = false;
+        Team3WIN.enabled = false;
+        Team4WIN.enabled = false;
+        Tie.enabled = false;
         playAgainText.enabled = false;
         roundOver = false;
     }
@@ -49,8 +60,7 @@ public class GameControler : MonoBehaviour
 
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
-        timer.text = "" + minutes + ":" + seconds;
-        UpdateVP();
+        timer.text = "" + minutes + ":" + seconds;        
     }
 
     public void GiveVP(int player)
@@ -58,77 +68,72 @@ public class GameControler : MonoBehaviour
         switch (player)
         {
             case 1:
-                p1VP++;
-                p2VP = 0;
+                p1VP++;                
                 break;
             case 2:
                 p2VP++;
-                p1VP = 0;
+                break;
+            case 3:
+                p3VP++;
+                break;
+            case 4:
+                p4VP++;
                 break;
         }
 
+        UpdateVP();
     }
 
     void UpdateVP()
     {
-        for (int i = 0; i < player1VP.Length; i++)
-        {
-            player1VP[i].enabled = false;
-        }
-        for (int i = 0; i < player2VP.Length; i++)
-        {
-            player2VP[i].enabled = false;
-        }
-
-        for (int i = p1VP - 1; i > -1; i--)
-        {
-            if (i < player1VP.Length)
-                player1VP[i].enabled = true;
-        }
-        for (int i = p2VP - 1; i > -1; i--)
-        {
-            if (i < player2VP.Length)
-                player2VP[i].enabled = true;
-        }
-        CheckWin();
+        Team1VP.text = "Team 1: " + p1VP + " points";
+        Team2VP.text = "Team 2: " + p2VP + " points";
+        Team3VP.text = "Team 3: " + p3VP + " points";
+        Team4VP.text = "Team 4: " + p4VP + " points";
     }
-
-    void CheckWin()
-    {
-        if (p1VP >= victoryPoints)
-        {
-            AnnounceWinner(1);
-        }
-        if (p2VP >= victoryPoints)
-        {
-            AnnounceWinner(2);
-        }
-    }
+    
     void CheckTimeWin()
     {
-        if (player1.hp < player2.hp)
-        {
-            AnnounceWinner(1);
-        }
-        if (player2.hp < player1.hp)
-        {
-            AnnounceWinner(2);
-        }
+        int winnerPoints = 0;
+        int currentWinner = 0;
+
+        if (p1VP > winnerPoints) { winnerPoints = p1VP; currentWinner = 1; }
+        if (p2VP > winnerPoints) { winnerPoints = p2VP; currentWinner = 2; }
+        if (p3VP > winnerPoints) { winnerPoints = p3VP; currentWinner = 3; }
+        if (p4VP > winnerPoints) { winnerPoints = p4VP; currentWinner = 4; }
+
+        if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
+        if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
+        if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
+
+        AnnounceWinner(currentWinner);
     }
-    void AnnounceWinner(int player)
+
+    void AnnounceWinner(int team)
     {
         player1.Death();
         player2.Death();
+        player3.Death();
+        player4.Death();
 
         Instantiate(endCamSetup, endCamSpawner);
 
-        switch (player)
+        switch (team)
         {
+            case 0:
+                Tie.enabled = true;
+                break;
             case 1:
-                player1WIN.enabled = true;
+                Team1WIN.enabled = true;
                 break;
             case 2:
-                player2WIN.enabled = true;
+                Team2WIN.enabled = true;
+                break;
+            case 3:
+                Team3WIN.enabled = true;
+                break;
+            case 4:
+                Team4WIN.enabled = true;
                 break;
         }
 

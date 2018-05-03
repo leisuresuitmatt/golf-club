@@ -6805,17 +6805,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 0}
   player2: {fileID: 0}
+  player3: {fileID: 0}
+  player4: {fileID: 0}
   timer: {fileID: 836863801}
-  player1VP:
-  - {fileID: 2134248309}
-  - {fileID: 124745211}
-  - {fileID: 2079608311}
-  player2VP:
-  - {fileID: 214456890}
-  - {fileID: 1020829498}
-  - {fileID: 1256640564}
-  player1WIN: {fileID: 41357288}
-  player2WIN: {fileID: 1698901094}
+  Team1VP: {fileID: 0}
+  Team2VP: {fileID: 0}
+  Team3VP: {fileID: 0}
+  Team4VP: {fileID: 0}
+  Team1WIN: {fileID: 0}
+  Team2WIN: {fileID: 0}
+  Team3WIN: {fileID: 0}
+  Team4WIN: {fileID: 0}
+  Tie: {fileID: 0}
   playAgainText: {fileID: 36661232}
   endCamSetup: {fileID: 1235740657098394, guid: 1bf887832a259ac488e079fad6a474bd,
     type: 2}
