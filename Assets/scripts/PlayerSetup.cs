@@ -13,7 +13,7 @@ public class PlayerSetup : MonoBehaviour
     public string player;
     public int teamNo;
 
-    private void Start()
+    public void SetupPlayer()
     {
         camcontrols.player = player;
         controls.player = player;
