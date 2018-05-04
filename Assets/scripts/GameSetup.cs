@@ -12,7 +12,15 @@ public class GameSetup : MonoBehaviour
     public PlayerList Setup3Players;
     public PlayerList Setup4Players;
 
-    private void Start()
+    public static GameSetup Instance;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+    public void StartTheGame()
     {
         Setup2Players.gameObject.SetActive(false);
         Setup3Players.gameObject.SetActive(false);

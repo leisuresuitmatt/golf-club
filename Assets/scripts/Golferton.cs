@@ -4,13 +4,28 @@ using UnityEngine;
 
 public class Golferton : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public int NumberOfPlayers;
+    public string[] PlayerControllers;
+    public int[] PlayerTeams;
+
+    public static Golferton Instance;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
+        if (GameSetup.Instance)
+        {
+            GameSetup.Instance.NumberOfPlayers = NumberOfPlayers;
+            GameSetup.Instance.PlayerControllers = PlayerControllers;
+            GameSetup.Instance.PlayerTeams = PlayerTeams;
+
+            GameSetup.Instance.StartTheGame();
+        }
+    }
 }
