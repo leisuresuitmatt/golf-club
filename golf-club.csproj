@@ -354,6 +354,7 @@
     <Compile Include="Assets\scripts\HitablePlayer.cs" />
     <Compile Include="Assets\scripts\MainMenuHandler.cs" />
     <Compile Include="Assets\scripts\PlayerDisabler.cs" />
+    <Compile Include="Assets\scripts\PlayerExplosion.cs" />
     <Compile Include="Assets\scripts\PlayerList.cs" />
     <Compile Include="Assets\scripts\PlayerSelectManager.cs" />
     <Compile Include="Assets\scripts\PlayerSetup.cs" />

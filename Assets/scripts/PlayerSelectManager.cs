@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerSelectManager : MonoBehaviour {
+public class PlayerSelectManager : MonoBehaviour
+{
 
     public Text[] plReadyTexts = new Text[4];
     

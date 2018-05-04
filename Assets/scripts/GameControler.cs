@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class GameControler : MonoBehaviour
 {
-
     public HitablePlayer player1;
     public HitablePlayer player2;
     public HitablePlayer player3;
@@ -43,6 +42,7 @@ public class GameControler : MonoBehaviour
         playAgainText.enabled = false;
         roundOver = false;
     }
+
     void Update()
     {
         if (roundOver)
@@ -60,7 +60,7 @@ public class GameControler : MonoBehaviour
 
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
-        timer.text = "" + minutes + ":" + seconds;        
+        timer.text = "" + minutes + ":" + seconds;
     }
 
     public void GiveVP(int player)
@@ -68,7 +68,7 @@ public class GameControler : MonoBehaviour
         switch (player)
         {
             case 1:
-                p1VP++;                
+                p1VP++;
                 break;
             case 2:
                 p2VP++;
@@ -91,7 +91,7 @@ public class GameControler : MonoBehaviour
         Team3VP.text = "Team 3: " + p3VP + " points";
         Team4VP.text = "Team 4: " + p4VP + " points";
     }
-    
+
     void CheckTimeWin()
     {
         int winnerPoints = 0;
@@ -111,10 +111,10 @@ public class GameControler : MonoBehaviour
 
     void AnnounceWinner(int team)
     {
-        player1.Death();
-        player2.Death();
-        player3.Death();
-        player4.Death();
+        if (player1) player1.Death();
+        if (player2) player2.Death();
+        if (player3) player3.Death();
+        if (player4) player4.Death();
 
         Instantiate(endCamSetup, endCamSpawner);
 

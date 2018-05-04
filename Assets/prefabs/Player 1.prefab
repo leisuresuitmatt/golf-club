@@ -2597,8 +2597,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53da9eac6cddcfb4f91ce1a522e23669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 0}
-  hp: 0
+  playerBody: {fileID: 1778766362134196}
+  Outline: {fileID: 137689732259610780}
+  NormalOutline: {fileID: 2100000, guid: dafd6eb39eb7a104da30ac94e3c41d6c, type: 2}
+  DamagedOutline: {fileID: 2100000, guid: dd42a9d35b2fce343848f7b77895b0fc, type: 2}
+  RespawnOutline: {fileID: 2100000, guid: ea7b79e4589542f4a8556cae327d299f, type: 2}
+  PlayerExplosion: {fileID: 1982540875559710, guid: 088c47fc80af9e34e8588d5f5320b3a6,
+    type: 2}
+  RespawnPoint: {fileID: 0}
+  hp: 100
   teamNo: 1
   disabler: {fileID: 114245379461762316}
 --- !u!114 &114855884454253964

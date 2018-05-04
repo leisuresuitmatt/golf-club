@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerList : MonoBehaviour {
+public class PlayerList : MonoBehaviour
+{
 
     public PlayerSetup[] playerList;
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerDisabler : MonoBehaviour
 {
-
     public RotateHorizontal camControls;
     public Camera cam1;
     public Camera cam2;

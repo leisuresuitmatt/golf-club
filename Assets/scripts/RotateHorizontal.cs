@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateHorizontal : MonoBehaviour {
+public class RotateHorizontal : MonoBehaviour
+{
 
     public string player;
 
