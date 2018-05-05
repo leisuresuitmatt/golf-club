@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenuHandler : MonoBehaviour
 {
+    public GameObject MainMenu;
+    public GameObject PlayerSelect;
+
     void Update()
     {
         if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("MiniGolf");
+            MainMenu.SetActive(false);
+            PlayerSelect.SetActive(true);
         }
     }
 }

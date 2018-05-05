@@ -31,6 +31,8 @@ public class GameControler : MonoBehaviour
     int p4VP;
     bool roundOver;
 
+    public static GameControler Instance;
+
     private void Start()
     {
         time *= 60;
@@ -45,6 +47,8 @@ public class GameControler : MonoBehaviour
 
     void Update()
     {
+        if (Instance != this) Instance = this;
+
         if (roundOver)
         {
             CheckLevelRestart();
@@ -60,12 +64,14 @@ public class GameControler : MonoBehaviour
 
         int minutes = (int)time / 60;
         int seconds = (int)time % 60;
-        timer.text = "" + minutes + ":" + seconds;
+
+        if (seconds >= 10) timer.text = "" + minutes + ":" + seconds;
+        else timer.text = "" + minutes + ": 0" + seconds;
     }
 
-    public void GiveVP(int player)
+    public void GiveVP(int playerReceiving, int playerLosing)
     {
-        switch (player)
+        switch (playerReceiving)
         {
             case 1:
                 p1VP++;
@@ -80,16 +86,31 @@ public class GameControler : MonoBehaviour
                 p4VP++;
                 break;
         }
+        switch (playerLosing)
+        {
+            case 1:
+                p1VP--;
+                break;
+            case 2:
+                p2VP--;
+                break;
+            case 3:
+                p3VP--;
+                break;
+            case 4:
+                p4VP--;
+                break;
+        }
 
         UpdateVP();
     }
 
     void UpdateVP()
     {
-        Team1VP.text = "Team 1: " + p1VP + " points";
-        Team2VP.text = "Team 2: " + p2VP + " points";
-        Team3VP.text = "Team 3: " + p3VP + " points";
-        Team4VP.text = "Team 4: " + p4VP + " points";
+        Team1VP.text = p1VP.ToString();
+        Team2VP.text = p2VP.ToString();
+        Team3VP.text = p3VP.ToString();
+        Team4VP.text = p4VP.ToString();
     }
 
     void CheckTimeWin()
