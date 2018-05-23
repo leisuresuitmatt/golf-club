@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 401a98cb33f48b94e91f45a9bb5c2b92
+timeCreated: 1527107336
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Cube.001
+    100004: Cube.002
+    100006: Cube.003
+    100008: Cube.004
+    100010: //RootNode
+    100012: MillRotor
+    100014: MillWing01
+    100016: MillWing01mesh
+    100018: MillWing02
+    100020: MillWing03mesh
+    100022: RotorPoint
+    100024: MillWing03
+    100026: MillWing04
+    400000: Cube
+    400002: Cube.001
+    400004: Cube.002
+    400006: Cube.003
+    400008: Cube.004
+    400010: //RootNode
+    400012: MillRotor
+    400014: MillWing01
+    400016: MillWing01mesh
+    400018: MillWing02
+    400020: MillWing03mesh
+    400022: RotorPoint
+    400024: MillWing03
+    400026: MillWing04
+    2100000: MillWall01
+    2100002: MillWood01
+    2100004: MillRoof01
+    2100006: MillWood02
+    2100008: MillFund01
+    2100010: MillWingCloth
+    2300000: Cube
+    2300002: Cube.001
+    2300004: Cube.002
+    2300006: Cube.003
+    2300008: Cube.004
+    2300010: //RootNode
+    2300012: MillRotor
+    2300014: MillWing01
+    2300016: MillWing01mesh
+    2300018: MillWing02
+    2300020: MillWing03mesh
+    2300022: RotorPoint
+    2300024: MillWing03
+    2300026: MillWing04
+    3300000: Cube
+    3300002: Cube.001
+    3300004: Cube.002
+    3300006: Cube.003
+    3300008: Cube.004
+    3300010: //RootNode
+    3300012: MillRotor
+    3300014: MillWing01
+    3300016: MillWing01mesh
+    3300018: MillWing02
+    3300020: MillWing03mesh
+    3300022: RotorPoint
+    3300024: MillWing03
+    3300026: MillWing04
+    4300000: Circle
+    4300002: Cube.004
+    4300004: Cube.003
+    4300006: Cube.002
+    4300008: Cube.001
+    4300010: Cube
+    4300012: MillBuilding
+    4300014: RotorPoint
+    4300016: MillWing01mesh
+    4300018: MillWing03mesh
+    4300020: MillWing02
+    4300022: MillWing01
+    4300024: MillRotor
+    4300026: MillWing04
+    4300028: MillWing03
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
