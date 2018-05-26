@@ -7,16 +7,25 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: HoleRim
+    100004: HoleBLK
+    100006: HoleCOLLIDER
     400000: //RootNode
     400002: HoleRim
+    400004: HoleBLK
+    400006: HoleCOLLIDER
     2100000: unnamed
     2300000: //RootNode
     2300002: HoleRim
+    2300004: HoleBLK
+    2300006: HoleCOLLIDER
     3300000: //RootNode
     3300002: HoleRim
+    3300004: HoleBLK
+    3300006: HoleCOLLIDER
     4300000: Circle
     4300002: HoleBLK
     4300004: HoleRim
+    4300006: HoleCOLLIDER
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
