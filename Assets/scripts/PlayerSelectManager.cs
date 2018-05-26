@@ -10,6 +10,8 @@ public class PlayerSelectManager : MonoBehaviour
     public Text[] plReadyTexts = new Text[4];
 
     public Text golf;
+    public Text mode;
+    public Text map;
     public string keyboard;
     public string controler1;
     public string controler2;
@@ -35,7 +37,11 @@ public class PlayerSelectManager : MonoBehaviour
     bool p3selected = false;
     bool p4selected = false;
 
-    public string SceneToLoad;
+    public string SceneToLoad1;
+    public string SceneToLoad2;
+    int mapSelected;
+
+    bool c1Trig, c2Trig, c3Trig, c4Trig;
 
     void Start()
     {
@@ -262,6 +268,54 @@ public class PlayerSelectManager : MonoBehaviour
             golf.enabled = false;
         }
 
+        if (Input.GetButtonDown("Select"))
+        {
+            if (mapSelected == 0) mapSelected = 1;
+            else if (mapSelected == 1) mapSelected = 0;
+
+            if (mapSelected == 0) map.text = "Map: Golferdome";
+            if (mapSelected == 1) map.text = "Map: The Golf Pit";
+        }
+
+        if ((Input.GetAxis(controler1 + "Fire1") > 0 || Input.GetAxis(controler1 + "Fire2") > 0) && !c1Trig)
+        {
+            c1Trig = true;
+            Golferton.Instance.isClassic = !Golferton.Instance.isClassic;
+            if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+            else mode.text = "DeathMatch";
+        }
+        if (Input.GetAxis(controler1 + "Fire1") == 0 && Input.GetAxis(controler1 + "Fire2") == 0) c1Trig = false;
+        if ((Input.GetAxis(controler2 + "Fire1") > 0 || Input.GetAxis(controler2 + "Fire2") > 0) && !c2Trig)
+        {
+            c2Trig = true;
+            Golferton.Instance.isClassic = !Golferton.Instance.isClassic;
+            if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+            else mode.text = "DeathMatch";
+        }
+        if (Input.GetAxis(controler2 + "Fire1") == 0 && Input.GetAxis(controler2 + "Fire2") == 0) c2Trig = false;
+        if ((Input.GetAxis(controler3 + "Fire1") > 0 || Input.GetAxis(controler3 + "Fire2") > 0) && !c3Trig)
+        {
+            c3Trig = true;
+            Golferton.Instance.isClassic = !Golferton.Instance.isClassic;
+            if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+            else mode.text = "DeathMatch";
+        }
+        if (Input.GetAxis(controler3 + "Fire1") == 0 && Input.GetAxis(controler3 + "Fire2") == 0) c3Trig = false;
+        if ((Input.GetAxis(controler4 + "Fire1") > 0 || Input.GetAxis(controler4 + "Fire2") > 0) && !c4Trig)
+        {
+            c4Trig = true;
+            Golferton.Instance.isClassic = !Golferton.Instance.isClassic;
+            if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+            else mode.text = "DeathMatch";
+        }
+        if (Input.GetAxis(controler4 + "Fire1") == 0 && Input.GetAxis(controler4 + "Fire2") == 0) c4Trig = false;
+        if (Input.GetButtonDown(keyboard + "Fire1") || Input.GetButtonDown(keyboard + "Fire2"))
+        {
+            Golferton.Instance.isClassic = !Golferton.Instance.isClassic;
+            if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+            else mode.text = "DeathMatch";
+        }
+
         if (golf.enabled && Input.GetButtonDown("Start"))
         {
             for (int i = 0; i < plTeams.Length; i++)
@@ -272,6 +326,10 @@ public class PlayerSelectManager : MonoBehaviour
             Golferton.Instance.NumberOfPlayers = numberOfPlayers;
             Golferton.Instance.PlayerControllers = plControls;
             Golferton.Instance.PlayerTeams = plTeams;
+
+            string SceneToLoad;
+            if (mapSelected == 0) SceneToLoad = SceneToLoad1;
+            else SceneToLoad = SceneToLoad2;
 
             SceneManager.LoadScene(SceneToLoad);
         }
