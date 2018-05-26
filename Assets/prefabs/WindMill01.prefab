@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33799515703616920}
   - component: {fileID: 23253694167925858}
   - component: {fileID: 54896897581467796}
+  - component: {fileID: 64691761925767970}
   m_Layer: 0
   m_Name: MillWing02
   m_TagString: Untagged
@@ -40,6 +41,7 @@ GameObject:
   - component: {fileID: 33675056450425754}
   - component: {fileID: 23833567397728588}
   - component: {fileID: 54424744204503000}
+  - component: {fileID: 64445724381055616}
   m_Layer: 0
   m_Name: MillWing03
   m_TagString: Untagged
@@ -80,6 +82,7 @@ GameObject:
   - component: {fileID: 33427325435915790}
   - component: {fileID: 23613828824524502}
   - component: {fileID: 54411442972755884}
+  - component: {fileID: 64955611091913362}
   m_Layer: 0
   m_Name: MillWing01
   m_TagString: Untagged
@@ -98,6 +101,7 @@ GameObject:
   - component: {fileID: 33358026037815470}
   - component: {fileID: 23121624414001376}
   - component: {fileID: 54807062727282116}
+  - component: {fileID: 64656489626665046}
   m_Layer: 0
   m_Name: MillWing04
   m_TagString: Untagged
@@ -200,8 +204,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1875231042993216}
-  m_LocalRotation: {x: -0, y: -0.9659257, z: -0, w: 0.25881967}
-  m_LocalPosition: {x: -5.55, y: 2.0900002, z: 6.82}
+  m_LocalRotation: {x: -0, y: -0.40938738, z: -0, w: -0.91236067}
+  m_LocalPosition: {x: -31.28, y: 9.92, z: -30.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4005272754063450}
@@ -212,7 +216,7 @@ Transform:
   - {fileID: 4055825531663742}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -150, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -311.667, z: 0}
 --- !u!4 &4709996611781008
 Transform:
   m_ObjectHideFlags: 1
@@ -659,13 +663,69 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!64 &64445724381055616
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082440224948966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300028, guid: 401a98cb33f48b94e91f45a9bb5c2b92, type: 3}
+--- !u!64 &64656489626665046
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1591267340939520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300026, guid: 401a98cb33f48b94e91f45a9bb5c2b92, type: 3}
+--- !u!64 &64691761925767970
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068193374107962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300020, guid: 401a98cb33f48b94e91f45a9bb5c2b92, type: 3}
+--- !u!64 &64955611091913362
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1553334336307044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300022, guid: 401a98cb33f48b94e91f45a9bb5c2b92, type: 3}
 --- !u!64 &64978613892500432
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1875231042993216}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c64e48f796683ec4abba57fe2d737866, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -680,7 +740,7 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439797540277974}
   m_ConnectedBody: {fileID: 54896897581467796}
-  m_BreakForce: Infinity
+  m_BreakForce: 100
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -693,7 +753,7 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439797540277974}
   m_ConnectedBody: {fileID: 54411442972755884}
-  m_BreakForce: Infinity
+  m_BreakForce: 100
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -706,7 +766,7 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439797540277974}
   m_ConnectedBody: {fileID: 54807062727282116}
-  m_BreakForce: Infinity
+  m_BreakForce: 100
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
@@ -719,7 +779,7 @@ FixedJoint:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439797540277974}
   m_ConnectedBody: {fileID: 54424744204503000}
-  m_BreakForce: Infinity
+  m_BreakForce: 100
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
