@@ -4086,6 +4086,7 @@ MonoBehaviour:
   Setup2Players: {fileID: 1291947248}
   Setup3Players: {fileID: 404884320}
   Setup4Players: {fileID: 712523889}
+  isClassic: 0
 --- !u!4 &1411497771
 Transform:
   m_ObjectHideFlags: 0
