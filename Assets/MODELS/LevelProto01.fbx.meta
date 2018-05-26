@@ -13,13 +13,35 @@ ModelImporter:
     400004: RockTunnel01
     2100000: MatGround01
     2100002: MatGrass01
+    2100004: MatSand01
+    2100006: MatTee01
     2300000: LevelPROTO1
     2300002: RockTunnel01
     3300000: LevelPROTO1
     3300002: RockTunnel01
     4300000: RockTunnel01
     4300002: LevelPROTO1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatGrass01
+    second: {fileID: 2100000, guid: 136c224ef6061754f94de1a675621a94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatGround01
+    second: {fileID: 2100000, guid: 1e0619b2ba0b0ab479deda8806c812d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatSand01
+    second: {fileID: 2100000, guid: bbd74cdedfde09f479b33529cf35c088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MatTee01
+    second: {fileID: 2100000, guid: b60843723afd7834ba2fef338209e322, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

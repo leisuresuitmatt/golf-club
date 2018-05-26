@@ -1,22 +1,21 @@
 fileFormatVersion: 2
-guid: 99f06db7ed2f6e94083e07a788863724
-timeCreated: 1527336809
+guid: ec5644bb0bcf92f44987b2f4732765bb
+timeCreated: 1527340384
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: HoleRim
+    100002: Plane
     400000: //RootNode
-    400002: HoleRim
+    400002: Plane
     2100000: unnamed
     2300000: //RootNode
-    2300002: HoleRim
+    2300002: Plane
     3300000: //RootNode
-    3300002: HoleRim
-    4300000: Circle
-    4300002: HoleBLK
-    4300004: HoleRim
+    3300002: Plane
+    4300000: Cube
+    4300002: Plane
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -68,10 +67,10 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 8
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
