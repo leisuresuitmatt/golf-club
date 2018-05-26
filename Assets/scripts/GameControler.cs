@@ -48,7 +48,8 @@ public class GameControler : MonoBehaviour
 
     private void Start()
     {
-        time *= 60;
+        time = GameSetup.Instance.timer;
+        isClassic = GameSetup.Instance.isClassic;
         Team1WIN.enabled = false;
         Team2WIN.enabled = false;
         Team3WIN.enabled = false;
@@ -60,8 +61,7 @@ public class GameControler : MonoBehaviour
 
     void Update()
     {
-        if (Instance != this) Instance = this;
-        isClassic = GameSetup.Instance.isClassic;
+        if (Instance != this) Instance = this;        
 
         if (roundOver)
         {
