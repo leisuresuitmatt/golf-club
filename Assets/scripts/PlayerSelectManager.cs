@@ -12,6 +12,7 @@ public class PlayerSelectManager : MonoBehaviour
     public Text golf;
     public Text mode;
     public Text map;
+    public Text timer;
     public string keyboard;
     public string controler1;
     public string controler2;
@@ -42,6 +43,7 @@ public class PlayerSelectManager : MonoBehaviour
     int mapSelected;
 
     bool c1Trig, c2Trig, c3Trig, c4Trig;
+    bool timerTrig;
 
     void Start()
     {
@@ -315,6 +317,42 @@ public class PlayerSelectManager : MonoBehaviour
             if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
             else mode.text = "DeathMatch";
         }
+
+        if ((Input.GetAxis(keyboard + "Vertical") > 0
+            || Input.GetAxis(controler1 + "Horizontal") > 0 || Input.GetAxis(controler1 + "Vertical") > 0
+            || Input.GetAxis(controler2 + "Horizontal") > 0 || Input.GetAxis(controler2 + "Vertical") > 0
+            || Input.GetAxis(controler3 + "Horizontal") > 0 || Input.GetAxis(controler3 + "Vertical") > 0
+            || Input.GetAxis(controler4 + "Horizontal") > 0 || Input.GetAxis(controler4 + "Vertical") > 0) 
+            && !timerTrig)
+        {
+            timerTrig = true;
+            Golferton.Instance.timer += 30f;            
+        }
+        if ((Input.GetAxis(keyboard + "Vertical") < 0
+            || Input.GetAxis(controler1 + "Horizontal") < 0 || Input.GetAxis(controler1 + "Vertical") < 0
+            || Input.GetAxis(controler2 + "Horizontal") < 0 || Input.GetAxis(controler2 + "Vertical") < 0
+            || Input.GetAxis(controler3 + "Horizontal") < 0 || Input.GetAxis(controler3 + "Vertical") < 0
+            || Input.GetAxis(controler4 + "Horizontal") < 0 || Input.GetAxis(controler4 + "Vertical") < 0)
+            && !timerTrig)
+        {
+            timerTrig = true;
+            Golferton.Instance.timer -= 30f;
+
+            if (Golferton.Instance.timer < 30f) Golferton.Instance.timer = 30f;
+        }
+        if (Input.GetAxis(keyboard + "Vertical") == 0
+            && Input.GetAxis(controler1 + "Horizontal") == 0 && Input.GetAxis(controler1 + "Vertical") == 0
+            && Input.GetAxis(controler2 + "Horizontal") == 0 && Input.GetAxis(controler2 + "Vertical") == 0
+            && Input.GetAxis(controler3 + "Horizontal") == 0 && Input.GetAxis(controler3 + "Vertical") == 0
+            && Input.GetAxis(controler4 + "Horizontal") == 0 && Input.GetAxis(controler4 + "Vertical") == 0)
+        {
+            timerTrig = false;            
+        }
+        int minutes = (int)Golferton.Instance.timer / 60;
+        int seconds = (int)Golferton.Instance.timer % 60;
+
+        if (seconds >= 10) timer.text = "" + minutes + ":" + seconds;
+        else timer.text = "" + minutes + ": 0" + seconds;
 
         if (golf.enabled && Input.GetButtonDown("Start"))
         {

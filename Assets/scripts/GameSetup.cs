@@ -12,6 +12,7 @@ public class GameSetup : MonoBehaviour
     public PlayerList Setup3Players;
     public PlayerList Setup4Players;
 
+    public float timer;
     public bool isClassic;
 
     public static GameSetup Instance;
