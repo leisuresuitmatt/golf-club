@@ -965,6 +965,42 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
   m_PrefabInternal: {fileID: 192444929}
+--- !u!1 &192444931 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100004, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
+  m_PrefabInternal: {fileID: 192444929}
+--- !u!1 &192444932 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
+  m_PrefabInternal: {fileID: 192444929}
+--- !u!64 &192444933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192444931}
+  m_Material: {fileID: 13400000, guid: 9f93f63d068b08c459038c40fce897d8, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
+--- !u!64 &192444934
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 192444932}
+  m_Material: {fileID: 13400000, guid: 0ce258168d1314c43bada84603a9cc0e, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
 --- !u!1001 &233182097
 Prefab:
   m_ObjectHideFlags: 0
@@ -7091,6 +7127,7 @@ GameObject:
   - component: {fileID: 1646641617}
   - component: {fileID: 1646641619}
   - component: {fileID: 1646641618}
+  - component: {fileID: 1646641620}
   m_Layer: 0
   m_Name: RockTunnel01 (1)
   m_TagString: Untagged
@@ -7154,6 +7191,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1646641616}
+  m_Mesh: {fileID: 4300000, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
+--- !u!64 &1646641620
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1646641616}
+  m_Material: {fileID: 13400000, guid: 9f93f63d068b08c459038c40fce897d8, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9fb79b5384925bd46bf7782bf24374bf, type: 3}
 --- !u!1 &1649432402
 GameObject:
