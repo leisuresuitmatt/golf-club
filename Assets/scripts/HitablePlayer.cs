@@ -13,6 +13,7 @@ public class HitablePlayer : Hitable
     public Transform RespawnPoint;
     public float hp = 100;
     public int teamNo;
+    int damagingTeam;
     float damagedTimer;
     
     public PlayerDisabler disabler;
@@ -35,10 +36,11 @@ public class HitablePlayer : Hitable
     {
         if(team != teamNo)
         {
-            hp -= dmg;
+            hp -= dmg;            
 
             if (dmg > 0)
             {
+                damagingTeam = team;
                 damagedTimer = .5f;
                 Outline.material = DamagedOutline;
             }
@@ -52,6 +54,9 @@ public class HitablePlayer : Hitable
 
     void Respawn()
     {
+        if (GameControler.Instance.isClassic) GameControler.Instance.GiveHiddenVP(damagingTeam, teamNo);
+        else GameControler.Instance.GiveVP(damagingTeam, teamNo);
+
         Instantiate(PlayerExplosion, transform.position, Quaternion.identity);
         Outline.material = RespawnOutline;
         playerBody.transform.position = RespawnPoint.position;
