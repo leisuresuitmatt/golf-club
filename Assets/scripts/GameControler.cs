@@ -224,9 +224,14 @@ public class GameControler : MonoBehaviour
         if (team4Plays)
             if (p4VP > winnerPoints) { winnerPoints = p4VP; currentWinner = 4; }
 
-        if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
-        if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
-        if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
+        if (team2Plays)
+            if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
+
+        if (team3Plays)
+            if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
+
+        if (team4Plays)
+            if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
 
         if (p1VP == winnerPoints && team1Plays) team1Plays = true;
         else team1Plays = false;
@@ -256,9 +261,14 @@ public class GameControler : MonoBehaviour
                 if (team4Plays)
                     if (p4VP > winnerPoints) { winnerPoints = p4HiddenVP; currentWinner = 4; }
 
-                if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
-                if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
-                if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
+                if (team2Plays)
+                    if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
+
+                if (team3Plays)
+                    if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
+
+                if (team4Plays)
+                    if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
 
                 if (p1VP == winnerPoints && team1Plays) team1Plays = true;
                 else team1Plays = false;
@@ -270,7 +280,7 @@ public class GameControler : MonoBehaviour
                 else team4Plays = false;
 
             }
-            if (!isClassic || currentWinner == 0)
+            if (currentWinner == 0)
             {
                 int loserPoints = Mathf.Max(p1LP, p2LP, p3LP, p4LP);
                 currentWinner = 0;
@@ -287,9 +297,14 @@ public class GameControler : MonoBehaviour
                 if (team4Plays)
                     if (p4LP < loserPoints) { loserPoints = p4LP; currentWinner = 4; }
 
-                if (p2LP == loserPoints && currentWinner != 2) currentWinner = 0;
-                if (p3LP == loserPoints && currentWinner != 3) currentWinner = 0;
-                if (p4LP == loserPoints && currentWinner != 4) currentWinner = 0;
+                if (team2Plays)
+                    if (p2LP == loserPoints && currentWinner != 2) currentWinner = 0;
+
+                if (team3Plays)
+                    if (p3LP == loserPoints && currentWinner != 3) currentWinner = 0;
+
+                if (team4Plays)
+                    if (p4LP == loserPoints && currentWinner != 4) currentWinner = 0;
             }
         }
 
