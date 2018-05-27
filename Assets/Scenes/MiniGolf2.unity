@@ -291,6 +291,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -4125,6 +4126,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -4615,6 +4617,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -16911,6 +16914,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -24776,6 +24780,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -25126,6 +25131,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -25563,6 +25569,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -26017,6 +26024,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -26276,6 +26284,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -29984,6 +29993,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -30373,6 +30383,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -34636,6 +34647,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -34895,6 +34907,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -35229,6 +35242,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -46229,6 +46243,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: cd5455f8cc4577b499d221083e75d2ce, type: 2}
   - {fileID: 2100000, guid: 1e0619b2ba0b0ab479deda8806c812d1, type: 2}
+  - {fileID: 2100000, guid: e7cf23349f859eb4f8e18ffe7ee999ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50075,6 +50090,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -57418,7 +57434,8 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1795090452}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
@@ -61188,6 +61205,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -61657,6 +61675,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -65704,6 +65723,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -66038,6 +66058,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -66239,6 +66260,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1788203040}
   m_Mesh: {fileID: 4300000, guid: 8f7f2bf66c4cbae44bed86aeca3ecc17, type: 3}
+--- !u!1 &1795090451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1795090452}
+  - component: {fileID: 1795090453}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795090452
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795090451}
+  m_LocalRotation: {x: 0.000000014901161, y: 0.6482228, z: -0.7614508, w: 0.0000028163195}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1494118693}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 99.18399, y: 180.001, z: 0.0019989014}
+--- !u!108 &1795090453
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1795090451}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 0.4185121, g: 0.28222317, b: 0.42647058, a: 1}
+  m_Intensity: 0.44
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.75
+    m_Bias: 0.1
+    m_NormalBias: 0.4
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1799029110
 GameObject:
   m_ObjectHideFlags: 0
@@ -80651,6 +80737,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -87808,6 +87895,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -88158,6 +88246,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -92532,6 +92621,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
