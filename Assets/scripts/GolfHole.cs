@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class GolfHole : MonoBehaviour
 {
-    Renderer myRenderer;
+    public Renderer[] myRenderer;
     public Material[] materials;
-    int teamNo;
-
-    private void Start()
-    {
-        myRenderer = GetComponent<Renderer>();
-    }
+    int teamNo = 0;
 
     private void OnTriggerEnter(Collider other)
     {
         GolfBall entered = other.gameObject.GetComponent<GolfBall>();
         if (entered)
         {
-            if (entered.team != 0 && entered.team != teamNo)
+            if (entered.lastTeam != 0 && entered.lastTeam != teamNo)
             {
                 int loss = teamNo;
-                teamNo = entered.team;
+                teamNo = entered.lastTeam;
                 GameControler.Instance.GiveVP(teamNo, loss);
-                myRenderer.material = materials[teamNo];
+
+                foreach (Renderer rend in myRenderer)
+                    rend.material = materials[teamNo];
             }
+            entered.Respawn();
         }
     }
 }

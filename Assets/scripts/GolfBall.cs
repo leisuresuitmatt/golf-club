@@ -19,6 +19,7 @@ public class GolfBall : MonoBehaviour
     Rigidbody rb;
     public float maxDmg;
     public int team;
+    public int lastTeam;
     int exploTeam;
     public float explosionMultiplier;
     public bool airborne;
@@ -31,8 +32,10 @@ public class GolfBall : MonoBehaviour
     bool idle = false;
 
     public ParticleSystem SignpostParticles;
-    #endregion
 
+    Vector3 startPos;
+    #endregion
+    
     public void calcDmg() // obliczanie obrażeń 
     {
         if (speed < minSpeedtoDmg)
@@ -58,6 +61,7 @@ public class GolfBall : MonoBehaviour
     public void FixedUpdate()
     {
         ChangeColor();
+        if (team != 0) lastTeam = team;
         curSpeed = rb.velocity.magnitude;
 
         if (speed != curSpeed)
@@ -82,7 +86,8 @@ public class GolfBall : MonoBehaviour
         }
 
         if (airborne && !SignpostParticles.isPlaying) SignpostParticles.Play();
-        
+        else if (SignpostParticles.isPlaying) SignpostParticles.Stop();
+
     }
 
     public void OnCollisionEnter(Collision other)
@@ -124,7 +129,6 @@ public class GolfBall : MonoBehaviour
                 GetComponent<Renderer>().material = materials[4];
                 trail.material = trails[4];
                 break;
-
         }
     }
 
@@ -142,7 +146,16 @@ public class GolfBall : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         timer = idleTimer;
         trail = GetComponent<TrailRenderer>();
-    } 
+        startPos = transform.position;
+    }
+    
+    public void Respawn()
+    {
+        team = 0;
+        lastTeam = 0;
+        timer = idleTimer;
+        transform.position = startPos;
+    }
 }
 
 
