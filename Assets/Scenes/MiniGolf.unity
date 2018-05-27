@@ -4284,16 +4284,6 @@ Prefab:
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 2082749734}
-    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
