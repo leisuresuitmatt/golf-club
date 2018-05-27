@@ -12597,6 +12597,38 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114758504144399508, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758504144399508, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: dot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114438576495747260, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114855884454253964, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
@@ -13145,6 +13177,46 @@ Prefab:
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 1128930503}
+    - target: {fileID: 114758504144399508, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758504144399508, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: dot
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 20693693523640728, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20202386845010156, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20693693523640728, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20202386845010156, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
@@ -20671,7 +20743,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4445320854292890, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
@@ -30201,6 +30273,28 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114438576495747260, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114855884454253964, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
@@ -38873,6 +38967,16 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
@@ -38930,7 +39034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4445320854292890, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1514331643815702, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
       propertyPath: m_Name
@@ -60863,6 +60967,16 @@ Prefab:
       propertyPath: m_NormalizedViewPortRect.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
@@ -66207,6 +66321,72 @@ Prefab:
       propertyPath: player2
       value: 
       objectReference: {fileID: 1043418537}
+    - target: {fileID: 114201225044478980, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114603282210810156, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114525733926902100, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114073323200616744, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114684348077054480, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114105818550371030, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114548173316527470, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114612076303614620, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114340131988684712, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114249813933569732, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
+    - target: {fileID: 114212399576361420, guid: 91440a468e83d624e87569d72cece9d0,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91440a468e83d624e87569d72cece9d0, type: 2}
   m_IsPrefabParent: 0
@@ -69840,7 +70020,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4445320854292890, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1514331643815702, guid: 369c8a998f56b00488dea3c4334d1fd5, type: 2}
       propertyPath: m_Name
@@ -92597,6 +92777,26 @@ Prefab:
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 1646623066}
+    - target: {fileID: 20202386845010156, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20693693523640728, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20202386845010156, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 20693693523640728, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0
