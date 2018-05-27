@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGolf.unity
     guid: 201105c946815ed4eb93e0f633f28f52
+  - enabled: 1
+    path: Assets/Scenes/MiniGolf2.unity
+    guid: b33cfdb652fa0594c9cfebd6aefc5633
