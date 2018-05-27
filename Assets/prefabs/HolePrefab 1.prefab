@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4082777225977048}
   - component: {fileID: 33282938322912164}
   - component: {fileID: 23875608622234156}
-  - component: {fileID: 95078807647167258}
   m_Layer: 0
   m_Name: FlagModel
   m_TagString: Untagged
@@ -72,7 +71,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4445320854292890}
-  - component: {fileID: 95634161170351992}
   m_Layer: 0
   m_Name: HolePrefab 1
   m_TagString: Untagged
@@ -123,7 +121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4259303447517024}
   - component: {fileID: 65510350916041374}
-  m_Layer: 0
+  - component: {fileID: 114322222486642122}
+  m_Layer: 11
   m_Name: BallEjector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +234,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1514331643815702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7945604, y: 1.07, z: -3.0347018}
+  m_LocalPosition: {x: 20.08, y: 0.01, z: -27.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4580585709542554}
@@ -487,42 +486,28 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95078807647167258
-Animator:
-  serializedVersion: 3
+  m_Size: {x: 1, y: 1.6469898, z: 1}
+  m_Center: {x: 0, y: 0.3234949, z: 0}
+--- !u!114 &114322222486642122
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1218691108084658}
+  m_GameObject: {fileID: 1943162456356224}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: ec5644bb0bcf92f44987b2f4732765bb, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!95 &95634161170351992
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1514331643815702}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 99f06db7ed2f6e94083e07a788863724, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d36ce324afaa564780071f6f8b153b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRenderer:
+  - {fileID: 23369203526514466}
+  - {fileID: 23575415148938034}
+  materials:
+  - {fileID: 2100000, guid: 9c3ff92e497e826429d205c8622300bf, type: 2}
+  - {fileID: 2100000, guid: 8172dee661dd4654da437ee545cc6679, type: 2}
+  - {fileID: 2100000, guid: 851bc229e8525c24b8fd8f28e292f227, type: 2}
+  - {fileID: 2100000, guid: b2db742578b8b7445a74e20c01443d77, type: 2}
+  - {fileID: 2100000, guid: 10e176be0457dab4fa399d5bf9605584, type: 2}
 --- !u!114 &114922655515376082
 MonoBehaviour:
   m_ObjectHideFlags: 1
