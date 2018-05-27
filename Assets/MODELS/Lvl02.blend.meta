@@ -12,6 +12,10 @@ ModelImporter:
     400002: Lvl02hill
     400004: Lvl02Wall
     2100000: unnamed
+    2100002: CanyonFloorMat
+    2100004: Canyon01mat
+    2100006: CanyonTopmat
+    2100008: Canyon02mat
     2300000: //RootNode
     2300002: Lvl02hill
     2300004: Lvl02Wall
@@ -23,7 +27,27 @@ ModelImporter:
     4300004: Lvl02Wall
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canyon01mat
+    second: {fileID: 2100000, guid: 81dd9389b2527df43a143fae7454ef6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Canyon02mat
+    second: {fileID: 2100000, guid: e7cf23349f859eb4f8e18ffe7ee999ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CanyonFloorMat
+    second: {fileID: 2100000, guid: cd5455f8cc4577b499d221083e75d2ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CanyonTopmat
+    second: {fileID: 2100000, guid: d8cb076eab8ac1b42afca2ea75dc7d8b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
