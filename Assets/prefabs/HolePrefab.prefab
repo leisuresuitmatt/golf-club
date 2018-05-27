@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33090996205028090}
   - component: {fileID: 64533971113166862}
   - component: {fileID: 23039630383043260}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HoleCOLLIDER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1315747463362122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.01, z: 0}
+  m_LocalPosition: {x: 10, y: 1.01, z: 0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4117017397020476}
