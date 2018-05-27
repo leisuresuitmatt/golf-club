@@ -63,6 +63,57 @@ public class PlayerSelectManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown(keyboard + "Jump") && keyboardSelected)
+        {
+            int newTeam = plTeams[keyboardIndex];
+
+            newTeam++;
+            if (newTeam >= 4) newTeam = 0;
+
+            plTeams[keyboardIndex] = newTeam;
+            plReadyTexts[keyboardIndex].color = teamcolors[newTeam];
+        }
+        if (Input.GetButtonDown(controler1 + "Jump") && p1selected)
+        {
+            int newTeam = plTeams[controller1Index];
+
+            newTeam++;
+            if (newTeam >= 4) newTeam = 0;
+
+            plTeams[controller1Index] = newTeam;
+            plReadyTexts[controller1Index].color = teamcolors[newTeam];
+        }
+        if (Input.GetButtonDown(controler2 + "Jump") && p2selected)
+        {
+            int newTeam = plTeams[controller2Index];
+
+            newTeam++;
+            if (newTeam >= 4) newTeam = 0;
+
+            plTeams[controller2Index] = newTeam;
+            plReadyTexts[controller2Index].color = teamcolors[newTeam];
+        }
+        if (Input.GetButtonDown(controler3 + "Jump") && p3selected)
+        {
+            int newTeam = plTeams[controller3Index];
+
+            newTeam++;
+            if (newTeam >= 4) newTeam = 0;
+
+            plTeams[controller3Index] = newTeam;
+            plReadyTexts[controller3Index].color = teamcolors[newTeam];
+        }
+        if (Input.GetButtonDown(controler4 + "Jump") && p4selected)
+        {
+            int newTeam = plTeams[controller4Index];
+
+            newTeam++;
+            if (newTeam >= 4) newTeam = 0;
+
+            plTeams[controller4Index] = newTeam;
+            plReadyTexts[controller4Index].color = teamcolors[newTeam];
+        }
+
         if (Input.GetButtonDown(keyboard + "Jump") && !keyboardSelected)
         {
             keyboardSelected = true;
@@ -208,58 +259,7 @@ public class PlayerSelectManager : MonoBehaviour
             plReadyTexts[controller4Index].text = "Player " + (controller4Index + 1);
             plTeams[controller4Index] = 0;
             numberOfPlayers--;
-        }
-
-        if (Input.GetButtonDown(keyboard + "Jump") && keyboardSelected)
-        {
-            int newTeam = plTeams[keyboardIndex];
-
-            newTeam++;
-            if (newTeam >= 4) newTeam = 0;
-
-            plTeams[keyboardIndex] = newTeam;
-            plReadyTexts[keyboardIndex].color = teamcolors[newTeam];
-        }
-        if (Input.GetButtonDown(controler1 + "Jump") && p1selected)
-        {
-            int newTeam = plTeams[controller1Index];
-
-            newTeam++;
-            if (newTeam >= 4) newTeam = 0;
-
-            plTeams[controller1Index] = newTeam;
-            plReadyTexts[controller1Index].color = teamcolors[newTeam];
-        }
-        if (Input.GetButtonDown(controler2 + "Jump") && p2selected)
-        {
-            int newTeam = plTeams[controller2Index];
-
-            newTeam++;
-            if (newTeam >= 4) newTeam = 0;
-
-            plTeams[controller2Index] = newTeam;
-            plReadyTexts[controller2Index].color = teamcolors[newTeam];
-        }
-        if (Input.GetButtonDown(controler3 + "Jump") && p3selected)
-        {
-            int newTeam = plTeams[controller3Index];
-
-            newTeam++;
-            if (newTeam >= 4) newTeam = 0;
-
-            plTeams[controller3Index] = newTeam;
-            plReadyTexts[controller3Index].color = teamcolors[newTeam];
-        }
-        if (Input.GetButtonDown(controler4 + "Jump") && p4selected)
-        {
-            int newTeam = plTeams[controller4Index];
-
-            newTeam++;
-            if (newTeam >= 4) newTeam = 0;
-
-            plTeams[controller4Index] = newTeam;
-            plReadyTexts[controller4Index].color = teamcolors[newTeam];
-        }
+        }       
 
         if (numberOfPlayers >= 2)
         {
