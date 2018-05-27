@@ -9,6 +9,7 @@ public class Golferton : MonoBehaviour {
     public int[] PlayerTeams;
     public float timer;
     public bool isClassic = true;
+    public int mapselected;
 
     public static Golferton Instance;
 
