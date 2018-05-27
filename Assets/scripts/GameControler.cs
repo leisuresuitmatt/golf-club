@@ -124,6 +124,8 @@ public class GameControler : MonoBehaviour
                 break;
         }
         if (isClassic)
+        {
+            Debug.Log("classic");
             switch (playerLosing)
             {
                 case 1:
@@ -139,7 +141,10 @@ public class GameControler : MonoBehaviour
                     p4VP--;
                     break;
             }
+        }
         else
+        {
+            Debug.Log("deathmatch");
             switch (playerLosing)
             {
                 case 1:
@@ -155,6 +160,7 @@ public class GameControler : MonoBehaviour
                     p4LP++;
                     break;
             }
+        }
         Debug.Log("VP: " + p1VP + " " + p2VP + " " + p3VP + " " + p4VP);
         Debug.Log("HVP: " + p1HiddenVP + " " + p2HiddenVP + " " + p3HiddenVP + " " + p4HiddenVP);
         Debug.Log("LP: " + p1LP + " " + p2LP + " " + p3LP + " " + p4LP);

@@ -18,6 +18,9 @@ public class Golferton : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void OnLevelWasLoaded(int level)
