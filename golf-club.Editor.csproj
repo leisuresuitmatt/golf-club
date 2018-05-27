@@ -288,13 +288,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="golf-club.csproj">
-      <Project>{37743298-6D1C-0F9F-649D-AD2E78D78278}</Project>
-      <Name>golf-club</Name>
-    </ProjectReference>
     <ProjectReference Include="golf-club.Plugins.csproj">
       <Project>{69ADC10D-2139-7610-5E72-9F304D8173A8}</Project>
       <Name>golf-club.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="golf-club.csproj">
+      <Project>{37743298-6D1C-0F9F-649D-AD2E78D78278}</Project>
+      <Name>golf-club</Name>
     </ProjectReference>
     <ProjectReference Include="golf-club.Editor.Plugins.csproj">
       <Project>{5E14E6B5-CBC8-3F42-80C0-159D65214360}</Project>
