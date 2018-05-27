@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 23a00c4f054713a4fb6b1c1cc62c162c
-timeCreated: 1527350349
+timeCreated: 1527452168
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BorderSprite_0
+    21300002: BorderSprite_1
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -36,16 +38,16 @@ TextureImporter:
     mipBias: -1
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 7
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 500, y: 500, z: 500, w: 500}
+  spriteBorder: {x: 350, y: 350, z: 350, w: 350}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -60,7 +62,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -70,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -78,7 +80,35 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BorderSprite_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 2038
+        height: 2038
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BorderSprite_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 450, y: 450, z: 450, w: 450}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline:
     - - {x: 703, y: -1019}
       - {x: 704, y: -1018}
