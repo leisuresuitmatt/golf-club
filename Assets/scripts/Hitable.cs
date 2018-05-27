@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hitable : MonoBehaviour
 {    
-	public virtual void HitMe(float dmg, int team)
+	public virtual void HitMe(float dmg, int team, bool isExplosion = false)
     {
 
     }

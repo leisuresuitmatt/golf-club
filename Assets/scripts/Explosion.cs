@@ -74,7 +74,7 @@ public class Explosion : MonoBehaviour {
         {
             if (other.GetComponent<Hitable>())
             {
-                other.GetComponent<Hitable>().HitMe(dmg, 0 /*teamNo*/);
+                other.GetComponent<Hitable>().HitMe(dmg, teamNo, true);
                 canDamage = false;
             }
         }
