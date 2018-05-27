@@ -58,6 +58,14 @@ public class PlayerSelectManager : MonoBehaviour
         {
             plEnabled[i] = false;
         }
+
+        if (Golferton.Instance.isClassic) mode.text = "Classic Mode";
+        else mode.text = "DeathMatch";
+
+        mapSelected = Golferton.Instance.mapselected;
+
+        if (mapSelected == 0) map.text = "Map: Golferdome";
+        if (mapSelected == 1) map.text = "Map: The Golf Pit";        
     }
 
 
@@ -277,6 +285,8 @@ public class PlayerSelectManager : MonoBehaviour
 
             if (mapSelected == 0) map.text = "Map: Golferdome";
             if (mapSelected == 1) map.text = "Map: The Golf Pit";
+
+            Golferton.Instance.mapselected = mapSelected;
         }
 
         if ((Input.GetAxis(controler1 + "Fire1") > 0 || Input.GetAxis(controler1 + "Fire2") > 0) && !c1Trig)

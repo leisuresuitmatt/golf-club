@@ -8,13 +8,13 @@ public class UImachine : MonoBehaviour
     public HitablePlayer playerhealth;
     public GolfHit player;
     public Text hp;
-    public Text power;
     public Slider slider;
+    public Image dot;
 	
 	void Update ()
     {
         hp.text = "HP: " + playerhealth.hp;
-        power.text = "Power: " + player.powerBuildUp*100 + "%";
-
+        slider.value = player.powerBuildUp;
+        dot.color = new Color(dot.color.r, dot.color.g, dot.color.b, player.powerBuildUp);
     }
 }

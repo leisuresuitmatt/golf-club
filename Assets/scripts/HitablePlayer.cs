@@ -15,7 +15,7 @@ public class HitablePlayer : Hitable
     public int teamNo;
     int damagingTeam;
     float damagedTimer;
-    
+
     public PlayerDisabler disabler;
 
     private void Update()
@@ -32,11 +32,24 @@ public class HitablePlayer : Hitable
         }
     }
 
-    public override void HitMe(float dmg, int team)
+    public override void HitMe(float dmg, int team, bool isExplosion = false)
     {
-        if(team != teamNo)
+        if (isExplosion)
         {
-            hp -= dmg;            
+            hp -= dmg;
+
+            if (dmg > 0)
+            {
+                if (team != teamNo)
+                    damagingTeam = team;
+
+                damagedTimer = .5f;
+                Outline.material = DamagedOutline;
+            }
+        }
+        else if (team != teamNo)
+        {
+            hp -= dmg;
 
             if (dmg > 0)
             {
@@ -44,7 +57,7 @@ public class HitablePlayer : Hitable
                 damagedTimer = .5f;
                 Outline.material = DamagedOutline;
             }
-        }        
+        }
     }
 
     public void Death()
