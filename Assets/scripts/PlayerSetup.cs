@@ -9,6 +9,7 @@ public class PlayerSetup : MonoBehaviour
     public Controls controls;
     public GolfHit gh;
     public HitablePlayer hp;
+    public ShirtColor shirt;
 
     public string player;
     public int teamNo;
@@ -20,5 +21,6 @@ public class PlayerSetup : MonoBehaviour
         gh.player = player;
         gh.teamNo = teamNo;
         hp.teamNo = teamNo;
+        shirt.SetColor(teamNo);
     }
 }

@@ -362,6 +362,7 @@
     <Compile Include="Assets\scripts\PlayerSelectManager.cs" />
     <Compile Include="Assets\scripts\PlayerSetup.cs" />
     <Compile Include="Assets\scripts\RotateHorizontal.cs" />
+    <Compile Include="Assets\scripts\ShirtColor.cs" />
     <Compile Include="Assets\scripts\TPPMovement.cs" />
     <Compile Include="Assets\scripts\UImachine.cs" />
   </ItemGroup>

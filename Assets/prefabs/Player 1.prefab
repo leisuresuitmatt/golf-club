@@ -315,6 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4846530062978088}
   - component: {fileID: 137429625926198504}
+  - component: {fileID: 114453598572222320}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2419,8 +2420,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.4, z: 0.6}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7, y: 0.4, z: 0.9}
+  m_Center: {x: 0, y: 0, z: 0.2}
 --- !u!92 &92605702966819224
 Behaviour:
   m_ObjectHideFlags: 1
@@ -2613,6 +2614,7 @@ MonoBehaviour:
   controls: {fileID: 114147566929886024}
   gh: {fileID: 114962282249355454}
   hp: {fileID: 114772612385445006}
+  shirt: {fileID: 114453598572222320}
   player: P1_
   teamNo: 1
 --- !u!114 &114438576495747260
@@ -2696,6 +2698,24 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114453598572222320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245326066775186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d64762eae41434686ba908bbc0bb2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialToSwap: 9
+  shirtMaterials:
+  - {fileID: 2100000, guid: c23d46e265c22c44d9cb89952d293755, type: 2}
+  - {fileID: 2100000, guid: 346ecca11f0cfdc4282e16070da4830b, type: 2}
+  - {fileID: 2100000, guid: 69579b929b9e5ab4882c224fb4492185, type: 2}
+  - {fileID: 2100000, guid: ee9a5fee034067d4f8e25d9dd2d84510, type: 2}
+  - {fileID: 2100000, guid: 265f325deff2c1645bd0f6a96bfde941, type: 2}
 --- !u!114 &114456332904845930
 MonoBehaviour:
   m_ObjectHideFlags: 1
