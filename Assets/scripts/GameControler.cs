@@ -8,6 +8,7 @@ public class GameControler : MonoBehaviour
     public HitablePlayer player2;
     public HitablePlayer player3;
     public HitablePlayer player4;
+    bool team1Plays, team2Plays, team3Plays, team4Plays;
 
     public Text timer;
     public Text Team1VP;
@@ -50,6 +51,28 @@ public class GameControler : MonoBehaviour
     {
         time = GameSetup.Instance.timer;
         isClassic = GameSetup.Instance.isClassic;
+
+        for (int i = 0; i < GameSetup.Instance.PlayerTeams.Length; i++)
+        {
+            switch (GameSetup.Instance.PlayerTeams[i])
+            {
+                case 1:
+                    team1Plays = true;
+                    break;
+                case 2:
+                    team2Plays = true;
+                    break;
+                case 3:
+                    team3Plays = true;
+                    break;
+                case 4:
+                    team4Plays = true;
+                    break;
+            }
+        }
+
+        Debug.Log("Teams: " + team1Plays + team2Plays + team3Plays + team4Plays);
+
         Team1WIN.enabled = false;
         Team2WIN.enabled = false;
         Team3WIN.enabled = false;
@@ -61,7 +84,7 @@ public class GameControler : MonoBehaviour
 
     void Update()
     {
-        if (Instance != this) Instance = this;        
+        if (Instance != this) Instance = this;
 
         if (roundOver)
         {
@@ -132,7 +155,9 @@ public class GameControler : MonoBehaviour
                     p4LP++;
                     break;
             }
-
+        Debug.Log("VP: " + p1VP + " " + p2VP + " " + p3VP + " " + p4VP);
+        Debug.Log("HVP: " + p1HiddenVP + " " + p2HiddenVP + " " + p3HiddenVP + " " + p4HiddenVP);
+        Debug.Log("LP: " + p1LP + " " + p2LP + " " + p3LP + " " + p4LP);
         UpdateVP();
     }
 
@@ -169,6 +194,9 @@ public class GameControler : MonoBehaviour
                 break;
         }
 
+        Debug.Log("VP: " + p1VP + " " + p2VP + " " + p3VP + " " + p4VP);
+        Debug.Log("HVP: " + p1HiddenVP + " " + p2HiddenVP + " " + p3HiddenVP + " " + p4HiddenVP);
+        Debug.Log("LP: " + p1LP + " " + p2LP + " " + p3LP + " " + p4LP);
     }
 
     void UpdateVP()
@@ -184,14 +212,30 @@ public class GameControler : MonoBehaviour
         int winnerPoints = 0;
         int currentWinner = 0;
 
-        if (p1VP > winnerPoints) { winnerPoints = p1VP; currentWinner = 1; }
-        if (p2VP > winnerPoints) { winnerPoints = p2VP; currentWinner = 2; }
-        if (p3VP > winnerPoints) { winnerPoints = p3VP; currentWinner = 3; }
-        if (p4VP > winnerPoints) { winnerPoints = p4VP; currentWinner = 4; }
+        if (team1Plays)
+            if (p1VP > winnerPoints) { winnerPoints = p1VP; currentWinner = 1; }
+
+        if (team2Plays)
+            if (p2VP > winnerPoints) { winnerPoints = p2VP; currentWinner = 2; }
+
+        if (team3Plays)
+            if (p3VP > winnerPoints) { winnerPoints = p3VP; currentWinner = 3; }
+
+        if (team4Plays)
+            if (p4VP > winnerPoints) { winnerPoints = p4VP; currentWinner = 4; }
 
         if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
         if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
         if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
+
+        if (p1VP == winnerPoints && team1Plays) team1Plays = true;
+        else team1Plays = false;
+        if (p2VP == winnerPoints && team2Plays) team2Plays = true;
+        else team2Plays = false;
+        if (p3VP == winnerPoints && team3Plays) team3Plays = true;
+        else team3Plays = false;
+        if (p4VP == winnerPoints && team4Plays) team4Plays = true;
+        else team4Plays = false;
 
         if (currentWinner == 0)
         {
@@ -200,23 +244,48 @@ public class GameControler : MonoBehaviour
                 winnerPoints = 0;
                 currentWinner = 0;
 
-                if (p1VP > winnerPoints) { winnerPoints = p1HiddenVP; currentWinner = 1; }
-                if (p2VP > winnerPoints) { winnerPoints = p2HiddenVP; currentWinner = 2; }
-                if (p3VP > winnerPoints) { winnerPoints = p3HiddenVP; currentWinner = 3; }
-                if (p4VP > winnerPoints) { winnerPoints = p4HiddenVP; currentWinner = 4; }
+                if (team1Plays)
+                    if (p1VP > winnerPoints) { winnerPoints = p1HiddenVP; currentWinner = 1; }
+
+                if (team2Plays)
+                    if (p2VP > winnerPoints) { winnerPoints = p2HiddenVP; currentWinner = 2; }
+
+                if (team3Plays)
+                    if (p3VP > winnerPoints) { winnerPoints = p3HiddenVP; currentWinner = 3; }
+
+                if (team4Plays)
+                    if (p4VP > winnerPoints) { winnerPoints = p4HiddenVP; currentWinner = 4; }
 
                 if (p2VP == winnerPoints && currentWinner != 2) currentWinner = 0;
                 if (p3VP == winnerPoints && currentWinner != 3) currentWinner = 0;
                 if (p4VP == winnerPoints && currentWinner != 4) currentWinner = 0;
+
+                if (p1VP == winnerPoints && team1Plays) team1Plays = true;
+                else team1Plays = false;
+                if (p2VP == winnerPoints && team2Plays) team2Plays = true;
+                else team2Plays = false;
+                if (p3VP == winnerPoints && team3Plays) team3Plays = true;
+                else team3Plays = false;
+                if (p4VP == winnerPoints && team4Plays) team4Plays = true;
+                else team4Plays = false;
+
             }
             if (!isClassic || currentWinner == 0)
             {
-                int loserPoints = p1LP;
-                currentWinner = 1;
+                int loserPoints = Mathf.Max(p1LP, p2LP, p3LP, p4LP);
+                currentWinner = 0;
 
-                if (p2LP > loserPoints) { loserPoints = p2LP; currentWinner = 2; }
-                if (p3LP > loserPoints) { loserPoints = p3LP; currentWinner = 3; }
-                if (p4LP > loserPoints) { loserPoints = p4LP; currentWinner = 4; }
+                if (team1Plays)
+                    if (p1LP < loserPoints) { loserPoints = p1LP; currentWinner = 1; }
+
+                if (team2Plays)
+                    if (p2LP < loserPoints) { loserPoints = p2LP; currentWinner = 2; }
+
+                if (team3Plays)
+                    if (p3LP < loserPoints) { loserPoints = p3LP; currentWinner = 3; }
+
+                if (team4Plays)
+                    if (p4LP < loserPoints) { loserPoints = p4LP; currentWinner = 4; }
 
                 if (p2LP == loserPoints && currentWinner != 2) currentWinner = 0;
                 if (p3LP == loserPoints && currentWinner != 3) currentWinner = 0;

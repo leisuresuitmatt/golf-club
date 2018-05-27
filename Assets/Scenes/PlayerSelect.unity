@@ -3871,8 +3871,8 @@ MonoBehaviour:
   - {r: 0.03448248, g: 0, b: 1, a: 1}
   - {r: 0.7647059, g: 0, b: 0.74361074, a: 1}
   - {r: 1, g: 0.80689657, b: 0, a: 1}
-  SceneToLoad1: MiniGolf
-  SceneToLoad2: MiniGolf2
+  SceneToLoad1: Minigolf
+  SceneToLoad2: Minigolf2
 --- !u!1 &1983974989
 GameObject:
   m_ObjectHideFlags: 0
