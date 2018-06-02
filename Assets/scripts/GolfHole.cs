@@ -13,14 +13,17 @@ public class GolfHole : MonoBehaviour
         GolfBall entered = other.gameObject.GetComponent<GolfBall>();
         if (entered)
         {
-            if (entered.lastTeam != 0 && entered.lastTeam != teamNo)
+            if (GameControler.Instance.isClassic)
             {
-                int loss = teamNo;
-                teamNo = entered.lastTeam;
-                GameControler.Instance.GiveVP(teamNo, loss);
+                if (entered.lastTeam != 0 && entered.lastTeam != teamNo)
+                {
+                    int loss = teamNo;
+                    teamNo = entered.lastTeam;
+                    GameControler.Instance.GiveVP(teamNo, loss);
 
-                foreach (Renderer rend in myRenderer)
-                    rend.material = materials[teamNo];
+                    foreach (Renderer rend in myRenderer)
+                        rend.material = materials[teamNo];
+                }
             }
             entered.Respawn();
         }

@@ -6,6 +6,7 @@ public class HitablePlayer : Hitable
 {
     public GameObject playerBody;
     public SkinnedMeshRenderer Outline;
+    public SkinnedMeshRenderer Body;
     public Material NormalOutline;
     public Material DamagedOutline;
     public Material RespawnOutline;
@@ -20,8 +21,6 @@ public class HitablePlayer : Hitable
 
     private void Update()
     {
-        if (hp <= 0) Respawn();
-
         if (damagedTimer > 0)
         {
             damagedTimer -= Time.deltaTime;
@@ -41,9 +40,9 @@ public class HitablePlayer : Hitable
             if (dmg > 0)
             {
                 if (team != teamNo)
-                    damagingTeam = team;
+                    damagingTeam = team;                
 
-                damagedTimer = .5f;
+                damagedTimer = 1f;
                 Outline.material = DamagedOutline;
             }
         }
@@ -54,9 +53,15 @@ public class HitablePlayer : Hitable
             if (dmg > 0)
             {
                 damagingTeam = team;
-                damagedTimer = .5f;
+                damagedTimer = 1f;
                 Outline.material = DamagedOutline;
             }
+        }
+
+        if (hp <= 0)
+        {
+            hp = 0;
+            Respawn();
         }
     }
 
@@ -71,10 +76,24 @@ public class HitablePlayer : Hitable
         else GameControler.Instance.GiveVP(damagingTeam, teamNo);
 
         Instantiate(PlayerExplosion, transform.position, Quaternion.identity);
+
+        Outline.enabled = false;
+        Body.enabled = false;
+
+        Invoke("ReturnToGame", .75f);
+    }
+
+    void ReturnToGame()
+    {
+        Outline.enabled = true;
+        Body.enabled = true;
+
         Outline.material = RespawnOutline;
         playerBody.transform.position = RespawnPoint.position;
         playerBody.transform.rotation = RespawnPoint.rotation;
 
         hp = 100;
+        damagingTeam = 0;
+        damagedTimer = 1f;
     }
 }

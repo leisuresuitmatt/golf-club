@@ -13,7 +13,7 @@ public class UImachine : MonoBehaviour
 	
 	void Update ()
     {
-        hp.text = "HP: " + playerhealth.hp;
+        hp.text = "HP: " + (int)playerhealth.hp;
         slider.value = player.powerBuildUp;
         dot.color = new Color(dot.color.r, dot.color.g, dot.color.b, player.powerBuildUp);
     }

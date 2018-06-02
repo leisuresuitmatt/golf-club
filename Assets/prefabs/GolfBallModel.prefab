@@ -73,9 +73,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1874572117967408}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 19.04, y: 15, z: -38.68}
-  m_LocalScale: {x: 1, y: 1.000001, z: 1.000001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4705418130494900}
   - {fileID: 4090832269998222}
@@ -333,6 +333,7 @@ MonoBehaviour:
   minSpeedtoDmg: 3
   maxDmg: 100
   team: 0
+  lastTeam: 0
   explosionMultiplier: 5
   airborne: 0
   explosion: {fileID: 1982540875559710, guid: 8e5c741df578a0c469d7633eab532891, type: 2}
@@ -422,7 +423,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1891786408
+  randomSeed: 125863083
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -1023,7 +1024,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 75
       minScalar: 0
       maxCurve:
         serializedVersion: 2

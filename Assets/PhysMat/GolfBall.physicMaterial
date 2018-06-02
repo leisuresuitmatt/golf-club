@@ -6,8 +6,8 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: GolfBall
-  dynamicFriction: 8
-  staticFriction: 0
+  dynamicFriction: 4
+  staticFriction: 0.5
   bounciness: 1
   frictionCombine: 3
   bounceCombine: 0

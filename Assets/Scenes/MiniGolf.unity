@@ -947,7 +947,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4225655133917582, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114772612385445006, guid: 22ba7ca79e39fc648a2976641e158d56,
         type: 2}
@@ -3423,13 +3423,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4609812207479150, guid: 91440a468e83d624e87569d72cece9d0, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114056811925616652, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: endCamSpawner
-      value: 
-      objectReference: {fileID: 1037138801}
     - target: {fileID: 114056811925616652, guid: 91440a468e83d624e87569d72cece9d0,
         type: 2}
       propertyPath: player1
@@ -3440,76 +3435,11 @@ Prefab:
       propertyPath: player2
       value: 
       objectReference: {fileID: 1022001294}
-    - target: {fileID: 1317846243613890, guid: 91440a468e83d624e87569d72cece9d0, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114105818550371030, guid: 91440a468e83d624e87569d72cece9d0,
+    - target: {fileID: 114056811925616652, guid: 91440a468e83d624e87569d72cece9d0,
         type: 2}
-      propertyPath: m_FontData.m_Font
+      propertyPath: endCamSpawner
       value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114249813933569732, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114612076303614620, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114525733926902100, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114684348077054480, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114212399576361420, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114073323200616744, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114340131988684712, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114548173316527470, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114201225044478980, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
-    - target: {fileID: 114603282210810156, guid: 91440a468e83d624e87569d72cece9d0,
-        type: 2}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: b01dc01b75d319949966eb8df5a86086,
-        type: 3}
+      objectReference: {fileID: 1037138801}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91440a468e83d624e87569d72cece9d0, type: 2}
   m_IsPrefabParent: 0
@@ -3623,6 +3553,87 @@ Transform:
   m_PrefabParentObject: {fileID: 4049634868597612, guid: 6d1dfdc9cd3ead140a12ccc987028fa8,
     type: 2}
   m_PrefabInternal: {fileID: 1122688716}
+--- !u!1 &1124775575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1124775579}
+  - component: {fileID: 1124775578}
+  - component: {fileID: 1124775577}
+  - component: {fileID: 1124775576}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1124775576
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124775575}
+  m_Enabled: 1
+--- !u!124 &1124775577
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124775575}
+  m_Enabled: 1
+--- !u!20 &1124775578
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124775575}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -100
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1124775579
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1124775575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1130031602
 Prefab:
   m_ObjectHideFlags: 0
@@ -4080,9 +4091,9 @@ Transform:
   m_Children:
   - {fileID: 2082749734}
   - {fileID: 80099152}
-  - {fileID: 253138159}
   - {fileID: 1747185437}
   - {fileID: 490185380}
+  - {fileID: 253138159}
   m_Father: {fileID: 1411497771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4394,13 +4405,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4225655133917582, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114772612385445006, guid: 22ba7ca79e39fc648a2976641e158d56,
         type: 2}
       propertyPath: RespawnPoint
       value: 
       objectReference: {fileID: 2082749734}
+    - target: {fileID: 224367411029198694, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224315664126409164, guid: 22ba7ca79e39fc648a2976641e158d56,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ba7ca79e39fc648a2976641e158d56, type: 2}
   m_IsPrefabParent: 0

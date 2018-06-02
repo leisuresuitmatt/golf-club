@@ -238,7 +238,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317846243613890}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -441,7 +441,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team 1 Wins!
+  m_Text: Red Team Wins!
 --- !u!114 &114340131988684712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,7 +507,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team 3 Wins!
+  m_Text: Purple Team Wins!
 --- !u!114 &114548173316527470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team 2 Wins!
+  m_Text: Blue Team Wins!
 --- !u!114 &114684348077054480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -639,7 +639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Team 4 Wins!
+  m_Text: Orange Team Wins!
 --- !u!114 &114770931528337808
 MonoBehaviour:
   m_ObjectHideFlags: 1

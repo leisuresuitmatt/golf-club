@@ -341,6 +341,7 @@
     <Compile Include="Assets\importedAssets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\scripts\BallAvoid.cs" />
     <Compile Include="Assets\scripts\Controls.cs" />
+    <Compile Include="Assets\scripts\CreditRoll.cs" />
     <Compile Include="Assets\scripts\EndCam.cs" />
     <Compile Include="Assets\scripts\EndCamHandle.cs" />
     <Compile Include="Assets\scripts\Escaper.cs" />

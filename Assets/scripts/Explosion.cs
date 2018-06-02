@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour {
+public class Explosion : MonoBehaviour
+{
 
     public float scale;
     public float dmg;
@@ -12,38 +13,43 @@ public class Explosion : MonoBehaviour {
     public float decay;
     float decTimer;
     bool canSpawn;
-    bool canDamage = true;
+    List<Hitable> cantDamage;
     public GameObject explosion;
     public Material[] materials;
 
-	void Start ()
+    private void Awake()
     {
+        cantDamage = new List<Hitable>();
+    }
+
+    void Start()
+    {        
         transform.localScale *= scale;
         decTimer = decay;
         canSpawn = true;
         ChangeColor();
         if (scale > maxScale)
             Destroy(gameObject);
-	}
-	
-	
-	void Update ()
+    }
+
+
+    void Update()
     {
         decTimer -= Time.deltaTime;
 
         if (decTimer <= 0 && canSpawn)
         {
             GameObject newExplosion = Instantiate(explosion, transform.position, transform.rotation) as GameObject;
-            newExplosion.GetComponent<Explosion>().scale = scale*increase;
-            newExplosion.GetComponent<Explosion>().dmg = dmg/increase;
+            newExplosion.GetComponent<Explosion>().scale = scale * increase;
+            newExplosion.GetComponent<Explosion>().dmg = dmg / increase;
             newExplosion.GetComponent<Explosion>().teamNo = teamNo;
-            newExplosion.GetComponent<Explosion>().canDamage = canDamage;
-                        
+            newExplosion.GetComponent<Explosion>().cantDamage = cantDamage;
+
             canSpawn = false;
-            Destroy(gameObject);            
+            Destroy(gameObject);
         }
-		
-	}
+
+    }
 
     void ChangeColor()
     {
@@ -70,12 +76,19 @@ public class Explosion : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (canDamage)
+        Hitable hit = other.GetComponent<Hitable>();
+        bool canDamage = true;
+
+        if (hit)
         {
-            if (other.GetComponent<Hitable>())
+            if (cantDamage.Count > 0)
+                foreach (Hitable alreadyHit in cantDamage)
+                    if (hit == alreadyHit) canDamage = false;
+
+            if (canDamage)
             {
-                other.GetComponent<Hitable>().HitMe(dmg, teamNo, true);
-                canDamage = false;
+                hit.HitMe(dmg, teamNo, true);
+                cantDamage.Add(hit);
             }
         }
     }
